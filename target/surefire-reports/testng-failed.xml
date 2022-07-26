@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="TestUtils.TestNgListeners"/>
+  </listeners>
+  <test thread-count="5" name="Minimal Test(failed)" verbose="0">
+    <groups>
+      <run>
+        <include name="Regression"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="org.rahulshettyacademy.GeneralStores2Test">
+        <methods>
+          <include name="AppiumConfigure"/>
+          <include name="tearDown"/>
+          <include name="SecondTest"/>
+        </methods>
+      </class> <!-- org.rahulshettyacademy.GeneralStores2Test -->
+    </classes>
+  </test> <!-- Minimal Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite">
+<groups>
+<run>
+<include name="Regression"></include>
+</run>
+</groups>
+
+<listeners>
+<listener class-name="TestUtils.TestNgListeners"/>
+</listeners>
+  <test thread-count="5" name="Minimal Test">
+    <classes>
+      <class name="org.rahulshettyacademy.GeneralStores1Test"/>
+      <class name="org.rahulshettyacademy.GeneralStores2Test"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
